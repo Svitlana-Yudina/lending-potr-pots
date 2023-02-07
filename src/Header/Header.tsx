@@ -20,10 +20,10 @@ export const Header: React.FC = () => {
       </div>
       <div className="header__content">
         <div className="promo-text">
-          POTR ~ Eco,<br/>
-          self-watering,<br/>
-          origami plant<br/>
-          pots
+          POTR ~ Eco,<br/>self-
+          <span className="colored">watering,<br/>origami </span>
+          plant<br/>
+          <span className="colored">pots</span>
         </div>
         <div className="promo-buy">
           <p className="promo-buy__price">$ 7,50</p>
