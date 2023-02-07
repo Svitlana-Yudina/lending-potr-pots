@@ -1,0 +1,106 @@
+@import '../utils/mixins';
+
+.header {
+  &__background {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      right: 120px;
+      width: 1160px;
+      height: 466px;
+
+      background-image: url('../images/back_desktop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @include onDesktop {
+      left: 0;
+      width: 1035px;
+    }
+
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    .main__link {
+      font-family: 'Bebas Neue';
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: 0.06em;
+      color: #333333;
+      text-decoration: none;
+    }
+
+    .navigation {
+      display: none;
+
+      @include onDesktop {
+        display: inline-block;
+      }
+
+      &__link {
+        margin-right: 60px;
+        text-decoration: none;
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #4F4F4F;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .basket__link {
+      display: none;
+
+      @include onDesktop {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-image: url('../images/basket_icon.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+      }
+    }
+  }
+
+  .menu {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/menu_icon.png');
+    background-repeat: no-repeat;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__content {
+    .promo-text{
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    
+      padding-bottom: 30px;
+    
+      color: transparent;
+      -webkit-text-stroke: 0.68px #03839E;
+    }
+  }
+}
+
+

@@ -1,0 +1,18 @@
+@import './utils/mixins';
+
+.app {
+  padding: 0 30px;
+
+  @include onTablet {
+    padding: 0 34px;
+  }
+
+  @include onDesktop {
+    padding: 0 135px;
+  }
+
+  &__content {
+    min-width: 320px;
+    max-width: 1280px;
+  }
+}

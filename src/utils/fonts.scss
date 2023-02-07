@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebasneueregular.woff2') format('woff2'),
+    url('../fonts/bebasneueregular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope/static/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope/static/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope/static/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
