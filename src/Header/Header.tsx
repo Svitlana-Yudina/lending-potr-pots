@@ -23,9 +23,9 @@ export const Header: React.FC = () => {
         <img 
           src="header_pot.png"
           alt="small pot"
-          className="header__image grid__item--desk-reverse_1-6 grid__item--tab-reverse_1-3"
+          className="header__image"
         />
-        <div className="promo-text grid__item--desktop_2-5 grid__item--tablet_1-6">
+        <div className="promo-text grid__item--desktop_2-12 grid__item--tablet_1-6">
           POTR ~ Eco,<br/>self-
           <span className="colored">watering,<br/>origami </span>
           plant<br/>

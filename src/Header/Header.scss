@@ -124,9 +124,9 @@
       width: 100%;
   
       @include onTablet {
-        // position: absolute;
-        // right: 0;
-        // z-index: -1;
+        position: absolute;
+        right: 0;
+        z-index: -5;
         width: 306px;
         height: 306px;
       }
