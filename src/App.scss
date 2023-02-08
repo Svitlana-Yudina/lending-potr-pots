@@ -1,14 +1,15 @@
 @import './utils/mixins';
 
 .app {
-  padding: 0 30px;
+  padding: 15px 30px 30px;
+  position: relative;
 
   @include onTablet {
-    padding: 0 34px;
+    padding: 29px 34px 117px;
   }
 
   @include onDesktop {
-    padding: 0 135px;
+    padding: 20px 135px 64px;
   }
 
   &__content {

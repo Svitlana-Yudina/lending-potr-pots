@@ -1,0 +1,58 @@
+@import './mixins';
+
+.grid {
+  display: block;
+
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+  
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    @for $start from 1 through 6 {
+      @for $span from 1 through 6 {
+        @include onTablet {
+          &--tablet_#{$start}-#{$span} {
+            grid-column: $start / span $span;
+          }
+        }
+      }
+    }
+
+    @for $start from -6 through -1 {
+      @for $span from 1 through 6 {
+        @include onTablet {
+          &--tab-reverse_#{$start}-#{$span} {
+            grid-column: $start / span $span;
+          }
+        }
+      }
+    }
+
+    @for $start from 1 through 12 {
+      @for $span from 1 through 12 {
+        @include onDesktop {
+          &--desktop_#{$start}-#{$span} {
+            grid-column: $start / span $span;
+          }
+        }
+      }
+    }
+  }
+
+  @for $start from -12 through -1 {
+    @for $span from 1 through 6 {
+      @include onTablet {
+        &--desk-reverse_#{$start}-#{$span} {
+          grid-column: $start / span $span;
+        }
+      }
+    }
+  }
+}

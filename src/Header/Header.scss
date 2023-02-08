@@ -7,8 +7,9 @@
     @include onTablet {
       display: block;
       position: absolute;
-      z-index: -1;
-      right: 120px;
+      z-index: -10;
+      right: 160px;
+      top: -50px;
       width: 1160px;
       height: 466px;
 
@@ -19,6 +20,7 @@
 
     @include onDesktop {
       left: 0;
+      top: 0;
       width: 1035px;
     }
 
@@ -27,6 +29,15 @@
   &__title {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+
+    @include onTablet {
+      padding-bottom: 49px;
+    }
+
+    @include onDesktop {
+      padding-bottom: 77px;
+    }
 
     .main__link {
       font-family: 'Bebas Neue';
@@ -68,7 +79,7 @@
         height: 30px;
         background-image: url('../images/basket_icon.svg');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-position: center;
         transform: matrix(-1, 0, 0, 1, 0, 0);
       }
     }
@@ -87,21 +98,42 @@
   }
 
   &__content {
+    position: relative;
+
     .promo-text{
       font-family: 'Bebas Neue', sans-serif;
       font-weight: 400;
       font-size: 36px;
       line-height: 43px;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.155em;
       text-transform: uppercase;
-    
-      padding-bottom: 30px;
-    
       color: transparent;
       -webkit-text-stroke: 0.68px #03839E;
 
+      @include onTablet {
+        font-size: 64px;
+        line-height: 64px;
+      }
+
       .colored {
         color: #03839E;
+      }
+    }
+
+    .header__image {
+      width: 100%;
+  
+      @include onTablet {
+        // position: absolute;
+        // right: 0;
+        // z-index: -1;
+        width: 306px;
+        height: 306px;
+      }
+  
+      @include onDesktop {
+        width: 500px;
+        height: 500px;
       }
     }
   }

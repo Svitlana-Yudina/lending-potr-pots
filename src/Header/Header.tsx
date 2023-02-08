@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import '../utils/grid.scss';
 
 export const Header: React.FC = () => {
   return (
@@ -18,8 +19,13 @@ export const Header: React.FC = () => {
         <a href="#message_us" className="basket__link"></a>
         <a href="#" className="menu"></a>
       </div>
-      <div className="header__content">
-        <div className="promo-text">
+      <div className="header__content grid">
+        <img 
+          src="header_pot.png"
+          alt="small pot"
+          className="header__image grid__item--desk-reverse_1-6 grid__item--tab-reverse_1-3"
+        />
+        <div className="promo-text grid__item--desktop_2-5 grid__item--tablet_1-6">
           POTR ~ Eco,<br/>self-
           <span className="colored">watering,<br/>origami </span>
           plant<br/>
