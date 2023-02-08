@@ -19,23 +19,29 @@ export const Header: React.FC = () => {
         <a href="#message_us" className="basket__link"></a>
         <a href="#" className="menu"></a>
       </div>
+
       <div className="header__content grid">
         <img 
           src="header_pot.png"
           alt="small pot"
           className="header__image"
         />
+
         <div className="promo-text grid__item--desktop_2-12 grid__item--tablet_1-6">
           POTR ~ Eco,<br/>self-
           <span className="colored">watering,<br/>origami </span>
           plant<br/>
           <span className="colored">pots</span>
         </div>
-        <div className="promo-buy">
+
+        <div className="promo-buy grid__item--desktop_5-12 grid__item--tablet_3-6">
           <p className="promo-buy__price">$ 7,50</p>
-          <p className="promo-buy__description">Get the second order in half price</p>
+          <p className="promo-buy__description">Get the second order <br/>in half price</p>
         </div>
-        <button type="button" className="buy-button">Buy now</button>
+
+        <button type="button" className="buy-button grid__item--desktop_4-12 grid__item--tablet_2-6">
+          Buy now
+        </button>
       </div>
     </div>
   );
