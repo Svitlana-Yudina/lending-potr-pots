@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import '../utils/grid.scss';
+import '../../utils/grid.scss';
 
 export const Header: React.FC = () => {
   return (
