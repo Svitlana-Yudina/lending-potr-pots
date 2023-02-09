@@ -11,6 +11,7 @@ export const ForWhom: React.FC = () => (
     <article className="forWhom__article about grid">
       <img src="pot1.png" alt="pot 1" className="about__image" />
       <div className="grid__item--desktop_8-5 grid__item--tablet_4-3">
+        <p className="about__star">Robust</p>
         <p className="about__number">1</p>
         <h2 className="about__title">
           For those who value durable things
@@ -25,6 +26,7 @@ export const ForWhom: React.FC = () => (
       <article className="grid__item--desktop_2-4 forWhom__article forWhom__article--second about grid">
         <img src="pot2.png" alt="pot 2" className="about__image about__image--second grid__item--desktop_2-11" />
         <div className="grid__item--desktop_2-11 grid__item--tablet_1-3">
+          <p className="about__star about__star--second">Beautiful</p>
           <p className="about__number about__number--second">2</p>
           <h2 className="about__title">
             For those who love modern design
@@ -38,6 +40,7 @@ export const ForWhom: React.FC = () => (
       <article className="grid__item--desktop_8-5 forWhom__article forWhom__article--third about grid">
         <img src="pot3.png" alt="pot 3" className="about__image about__image--third grid__item--desktop_1-12" />
         <div className="grid__item--tablet_4-3 grid__item--desktop_3-10">
+          <p className="about__star about__star--third">Saves time</p>
           <p className="about__number">3</p>
           <h2 className="about__title">
             For those who don&apos;t have enough time to regular water indoor plants
