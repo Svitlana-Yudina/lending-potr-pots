@@ -2,10 +2,20 @@
 @import '../../utils/mixins';
 
 .forWhom {
+  margin-bottom: 110px;
+
+  @include onTablet {
+    margin-bottom: 135px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 45px;
+  }
+
   &__title {
     margin-bottom: 25px;
     font-family: 'Bebas Neue';
-    font-weight: 400;
+    font-weight: 600;
     font-size: 36px;
     line-height: 150%;
     letter-spacing: 0.155em;
@@ -130,7 +140,7 @@
     position: relative;
     left: 18px;
     font-family: 'Bebas Neue';
-    font-weight: 400;
+    font-weight: 600;
     font-size: 36px;
     line-height: 65px;
     letter-spacing: 0.155em;
@@ -173,7 +183,7 @@
   &__title {
     margin-bottom: 20px;
     font-family: 'Bebas Neue';
-    font-weight: 400;
+    font-weight: 600;
     font-size: 36px;
     line-height: 150%;
     letter-spacing: 0.155em;

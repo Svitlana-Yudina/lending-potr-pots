@@ -1,0 +1,76 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.features {
+  &__title {
+    margin-bottom: 23px;
+
+    @include onTablet {
+      margin-bottom: 52px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__content {
+
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 70px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include onTablet {
+        margin-bottom: 0;
+        width: 223px;
+      }
+
+      @include onDesktop {
+        width: 370px;
+      }
+
+      &__image {
+        margin-bottom: 37px;
+        width: 100%;
+
+        @include onTablet {
+          margin-bottom: 27px;
+        }
+      }
+
+      &__title {
+        margin-bottom: 20px;
+        font-family: 'Bebas Neue';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.155em;
+        text-transform: uppercase;
+        color: $primaryDarkText;
+      }
+
+      &__description {
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: $primaryGrayText;
+      }
+    }
+  }
+}

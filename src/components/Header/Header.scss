@@ -33,7 +33,7 @@
 
   }
 
-  &__title {
+  &__nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -48,6 +48,7 @@
 
     .main__link {
       font-family: 'Bebas Neue';
+      font-weight: 600;
       font-size: 36px;
       line-height: 43px;
       letter-spacing: 0.06em;
@@ -107,25 +108,11 @@
   &__content {
     position: relative;
 
-    .promo-text{
+    .header__title {
       margin-bottom: 30px;
-      font-family: 'Bebas Neue', sans-serif;
-      font-weight: 400;
-      font-size: 36px;
-      line-height: 43px;
-      letter-spacing: 0.155em;
-      text-transform: uppercase;
-      color: transparent;
-      -webkit-text-stroke: 0.68px $promoBlueText;
 
       @include onTablet {
         margin-bottom: 0;
-        font-size: 64px;
-        line-height: 64px;
-      }
-
-      .colored {
-        color: $promoBlueText;
       }
     }
 
